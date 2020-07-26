@@ -26,3 +26,12 @@ install-extras: ## Update MIME
 	@echo Update MIME
 	sudo update-mime-database /usr/share/mime
 	sudo xdg-mime install --novendor stl.xml
+
+.PHONY: install-all
+install-all: ## Do all the things
+
+	@echo Do all the things!
+	make deps
+	make install
+	make install-extras
+
