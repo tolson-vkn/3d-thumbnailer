@@ -71,11 +71,24 @@ If you want to wipe out the thumbnails to rerender them. This is useful if you n
 rm -rf ~/.cache/thumbnails
 ```
 
-This of course whipes out everything. Maybe you care about some thumbnails. (Most will regenerate on next view)
+This of course wipes out everything. Maybe you care about some thumbnails. (Most will regenerate on next view)
 
 ## Misc
 
 * Models in screens are from: https://www.thingiverse.com/thing:1911808
+
+### Understanding GNOME thumbnailer
+
+Here is a table of the decorators and sample values:
+
+To get this I just requested all on the `Exec` line and `echo $@`
+
+| Decorator | Description | Value |
+|-----------|-------------|-------|
+| `%s` | Size (pixels) | 256 |
+| `%u` | URI (this is the stated ideal over `%i`) | `file:///tmp/Lifter_Guide_Scaled.stl` |
+| `%i` | File | `/tmp/Lifter_Guide_Scaled.stl` |
+| `%o` | Predefined output file | `/tmp/gnome-desktop-thumbnailer.png` |
 
 ## TODO
 
