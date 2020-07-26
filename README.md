@@ -61,7 +61,7 @@ Exec=/usr/local/bin/stl_thumbnailer.sh --in-file %i --out-file %o --size %s -r 8
 
 ## Debugging
 
-I find that if you do `--debug` in the `stl.thumbnailer`
+I find that if you do `--debug` in the `stl.thumbnailer` generating logs in `/tmp` can be useful. Otherwise it's not chatty.
 
 ### Clear out thumbnails
 
