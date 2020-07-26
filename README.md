@@ -1,4 +1,4 @@
-# README
+# STL 3D Thumbnailer
 
 ![Before and After][banda]
 
